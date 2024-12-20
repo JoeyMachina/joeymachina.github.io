@@ -26,7 +26,6 @@
     <div id="typewriter" class="typewriter"></div>
     <div id="typewriter2" class="typewriter"></div>
 
-    
     <a href="links.html" id="Links">Links</a>
     <a href="MeetTheBand.html" id="More">Meet<br>The<br>Band!</a>   
     
@@ -101,7 +100,8 @@
         const randomizer = document.getElementById("typewriter2");
 
         function randomizeText(text) {
-            const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+            //const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()"; 
+            const chars = "🖉✂✁🕭🕮🕿✆🖂🗏🗐🗄🖮🖰🖲☜☞☟☺☹☠🏳🏱✈☼❄🕆✞🕈✠✡☪🙰🙵●🔾■□🞐❑❒⬧⧫◆❖⬥⌧⮹⌘";
             return Array.from(text)
                 .map((char) => (char === " " ? " " : chars.charAt(Math.floor(Math.random() * chars.length))))
                 .join("");
