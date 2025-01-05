@@ -20,35 +20,60 @@
 
 <body>
 
-    <img id="titleLeft" src="img/gif/punchlove-vhs-black.gif" style="position: absolute; left: 0.1vh; top: 0.1vh;" />
-    <img id="titleRight" src="img/gif/punchlove-vhs-black.gif" style="position: absolute; right: 0.1vh; top: 0.1vh;" />
+    <div class="title">
+        <img id="titleLeft" src="img/gif/punchlove-vhs-black.gif" />
+        <img id="titleRight" src="img/gif/punchlove-vhs-black.gif" />
+    </div>
+
+    
 
     <div id="typewriter" class="typewriter"></div>
     <div id="typewriter2" class="typewriter"></div>
 
-    <a href="links.html" id="Links">Links</a>
-    <a href="MeetTheBand.html" id="More">Meet<br>The<br>Band!</a>   
-    
-    
-    
-    <!--
-    <a href="links.html">
-        <div class="footer" id="Links">
-            <p>Links</p>        
+    <div class="bottomtext">
+        <div class="linkParent">
+            <a href="links.html" id="Links"><- Links</a>
+            <a href="MeetTheBand.html" id="More">Meet The Band -></a> 
         </div>
-    </a>    
-    <a href="MeetTheBand.html">
-        <div class="footer" id="More">
-            <p>Meet<br>The<br>Band</p>
-        </div>
-    </a>
-    -->
+    
+        <a href="#scroll" id="Tour">▼  ▼  ▼  ▼  ▼  ▼  Tour Dates  ▼  ▼  ▼  ▼  ▼  ▼</a>
+    </div>
 
     <div id="videoBG" onclick="randomAudio()">
         <video autoplay muted id="cables">
             <source src="sublimate/cablezoom1sq.mp4" id="cableSource" type="video/mp4">
         </video>
     </div>
+
+    
+
+    
+    <div class="tourDates" id="scroll">
+
+        <pre><a                                                                        >Wed Feb 05                        Brooklyn                       Baby's All Right</a></pre>
+        <pre><a                                                                        >Wed Feb 12                        Rome, IT                            30 Formiche</a></pre>
+        <pre><a                                                                        >Fri Feb 14                        Florence, IT                            Ex-Fila</a></pre>
+        <pre><a                                                                        >Sat Feb 15                        Ravenna, IT                             Bronson</a></pre>
+        <pre><a                                                                        >Mon Feb 17                        Luxembourg, LX                     Les Rotundes</a></pre>
+        <pre><a                                                                        >Tue Feb 18                        Rouen, FR                           Le 3 Pieces</a></pre>
+        <pre><a                                                                        >Wed Feb 19                        Paris, FR                            Supersonic</a></pre>
+        <pre><a href="http://link.dice.fm/v95f5be8e0d7" target="_blank"                >Thu Feb 20                        London, UK                             Victoria</a></pre>
+        <pre><a                                                                        >Sat Feb 22                        Brighton, UK                       The Pipeline</a></pre>
+        <pre><a                                                                        >Sun Feb 23                        Helmond, NL                            Lokaal42</a></pre>
+        <pre><a href="https://www.facebook.com/events/586389654090151/" target="_blank">Mon Feb 24                        Kusel, DE                                Kinnet</a></pre>
+        <pre><a                                                                        >Tue Feb 25                        Hamburg, DE                            Stubnitz</a></pre>
+        <pre><a                                                                        >Wed Feb 26                        Copenhagen, DK                          Rahuset</a></pre>
+        <pre><a                                                                        >Thu Feb 27                        Stockholm, SE                        Slaktyrkan</a></pre>
+        <pre><a                                                                        >Fri Feb 28                        Jönköping, SE                The Hush Hush Club</a></pre>
+        <pre><a                                                                        >Sat Mar 01                        Oslo, NO                                 Goldie</a></pre>
+        <pre><a                                                                        >Mon Mar 03                        Berlin, DE                          Urban Spree</a></pre>
+        <pre><a                                                                        >Tue Mar 04                        Wrocław, PL                  Centrum Reanimacji</a></pre>
+        
+        <pre><a href="#top">▲ ▲ ▲ ▲ ▲ ▲</a></pre>
+
+    </div>
+
+    
     
     
     <script>
@@ -75,7 +100,7 @@
 
 
         //TYPEWRITER
-        const text = "more files are coming your way soon...";
+        const text = "more files coming your way soon...";
         const text2 = "more files are coming your way soon.";
         const speed = 48;
         let i = 0;
