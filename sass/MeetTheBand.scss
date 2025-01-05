@@ -15,14 +15,17 @@
     .header {
         display: flex;
         justify-content: center;
+        height: 7vw;
+        margin-bottom: 32px;
 
-        img { height: 100%; }
+        img { height: 75%; }
     }
 
     h1 {
         //font-family: 'Erin Go Bragh 3D';
-        font-size: 3.5em;
+        font-size: 3.5vw;
         text-align: center;
+        margin: 0;
     }
 
     #memberDiv {
@@ -46,3 +49,19 @@
 
     .leaks { display: flex; justify-content: right; }
 }
+
+@media (max-width: 1100px) { body {
+    #sideGirl {
+        display: none;
+    }
+    
+}}
+@media (max-width: 1000px) { body {
+    h1 { font-size: 5vw; }
+}}
+@media (max-width: 500px) { body { 
+    #memberDiv {
+        zoom: 0.3;
+    }
+}}
+
