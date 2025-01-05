@@ -10,14 +10,14 @@ html { scroll-behavior: smooth;
 }
 #titleLeft {
     display: inline-block;
-    width: 24vh; height: auto;
+    width: 22vh; height: auto;
     transform: translate(-3vh,6vh) perspective(500px) rotateY(45deg) rotateX(-25deg) rotateZ(-45deg);
     
 
 }
 #titleRight {
     display: inline-block;
-    width: 24vh; height: auto;
+    width: 22vh; height: auto;
     transform: translate(3vh,6vh) perspective(500px) rotateY(-45deg) rotateX(-25deg) rotateZ(45deg);
 }
 
